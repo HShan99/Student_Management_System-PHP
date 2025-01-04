@@ -71,6 +71,75 @@
     </div>
 
 
+    <center>
+        <h1>Our Courses</h1>
+    </center>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img class="course" src="images/digital_marketing.png" alt="image">
+                <p class="course_description">Digital Marketing</p>
+            </div>
+            <div class="col-md-4">
+                <img class="course" src="images/graphic_design.png" alt="image">
+                <p class="course_description">Graphic Design</p>
+            </div>
+            <div class="col-md-4">
+                <img class="course" src="images/web_development.png" alt="image">
+                <p class="course_description">Web Development</p>
+            </div>
+        </div>
+
+    </div>
+
+    <center>
+        <h1>Admission Form</h1>
+    </center>
+
+    <div align="center" class="form_details" style="padding-top: 20px;">
+        <form>
+            <div class="form-group row" style="padding-top: 15px;">
+                <label class=" col-lg-3 col-form-label"></label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control custom-input-width" placeholder=" Name">
+                </div>
+            </div>
+
+            <div class="form-group row" style="padding-top: 15px;">
+                <label class=" col-lg-3 col-form-label"></label>
+                <div class="col-sm-6">
+                    <input type="email" class="form-control custom-input-width" placeholder="Email">
+                </div>
+            </div>
+
+            <div class="form-group row" style="padding-top: 15px;">
+                <label class="col-lg-3 col-form-label"></label>
+                <div class="col-sm-6">
+                    <input type=text" class="form-control custom-input-width" placeholder="Address">
+                </div>
+            </div>
+
+            <div class="form-group row" style="padding-top: 15px;">
+                <label class="col-lg-3 col-form-label"></label>
+                <div class="col-sm-6">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">
+                </textarea>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary"
+                style="margin-top: 15px; margin-left:600px; width:150px;">Apply</button>
+    </div>
+    </form>
+
+    <div>
+        <footer class="footer">
+            <h3 class="footer_text">All @copyright reserved by W-School</h3>
+        </footer>
+    </div>
+
+
+
 
 
 
