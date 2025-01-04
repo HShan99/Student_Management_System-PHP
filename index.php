@@ -44,6 +44,32 @@
         </div>
     </div>
 
+    <center>
+        <h1>Our Teachers</h1>
+    </center>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img class="teacher" src="images/teacher1.png" alt="image">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet perspiciatis optio deserunt autem
+                    beatae nostrum!</p>
+            </div>
+            <div class="col-md-4">
+                <img class="teacher" src="images/teacher2.png" alt="image">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aliquam hic non cupiditate
+                    corrupti.</p>
+            </div>
+            <div class="col-md-4">
+                <img class="teacher" src="images/teacher3.png" alt="image">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus
+                    sint,
+                    consequuntur, esse commodi fuga</p>
+            </div>
+        </div>
+
+    </div>
+
 
 
 
