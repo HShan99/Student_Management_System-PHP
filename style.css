@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; 
-  
+  overflow-x: hidden;
+}
 .logo {
   font-size: 25px;
   position: relative;
@@ -87,4 +87,8 @@ center {
   color: white;
   font-size: 15px;
   padding-top: 30px;
+}
+#login {
+  font-size: 50px;
+  color: blue;
 }
