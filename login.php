@@ -16,6 +16,15 @@
 
 
     <div align="center" class="form_details" style="padding-top: 70px; padding-left: 400px;">
+        <h6 style="padding-right:380px;">
+            <?php
+            error_reporting(0);
+            session_start();
+            session_destroy();
+        
+            echo $_SESSION['loginMessage'];
+            ?>
+        </h6>
         <center id="login" style="font-size:40px; padding-right:380px; padding-bottom:50px; font-weight:bold">Login Form
         </center>
         <form action="login_check.php" method="POST">
@@ -23,14 +32,15 @@
             <div class="form-group row" style="padding-top: 15px;">
                 <label class="col-lg-3 col-form-label">User Name</label>
                 <div class="col-sm-3">
-                    <input type="text" class="form-control custom-input-width" placeholder=" User Name">
+                    <input type="text" class="form-control custom-input-width" name="userName" placeholder=" User Name">
                 </div>
             </div>
 
             <div class="form-group row" style="padding-top: 15px;">
                 <label class=" col-lg-3 col-form-label">Password</label>
                 <div class="col-sm-3">
-                    <input type="password" class="form-control custom-input-width" placeholder="Password">
+                    <input type="password" class="form-control custom-input-width" name="password"
+                        placeholder="Password">
                 </div>
             </div>
 
