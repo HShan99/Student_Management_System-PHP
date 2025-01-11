@@ -1,3 +1,17 @@
+<?php
+
+error_reporting(0);
+session_start();
+session_destroy();
+
+if($_SESSION['message']){
+    $message = $_SESSION['message'];
+    echo "<script type='text/javascript'>
+        alert('$message');
+    </script>";
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -98,37 +112,39 @@
     </center>
 
     <div align="center" class="form_details" style="padding-top: 20px;">
-        <form>
+        <form action="data_check.php" method="post">
             <div class="form-group row" style="padding-top: 15px;">
                 <label class=" col-lg-3 col-form-label"></label>
                 <div class="col-sm-6">
-                    <input type="text" class="form-control custom-input-width" placeholder=" Name">
+                    <input type="text" class="form-control custom-input-width" name="name" placeholder=" Name">
                 </div>
             </div>
 
             <div class="form-group row" style="padding-top: 15px;">
                 <label class=" col-lg-3 col-form-label"></label>
                 <div class="col-sm-6">
-                    <input type="email" class="form-control custom-input-width" placeholder="Email">
+                    <input type="email" class="form-control custom-input-width" name="email" placeholder="Email">
+                </div>
+            </div>
+
+            <div class="form-group row" style="padding-top: 15px;">
+                <label class=" col-lg-3 col-form-label"></label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control custom-input-width" name="phone" placeholder="Phone">
                 </div>
             </div>
 
             <div class="form-group row" style="padding-top: 15px;">
                 <label class="col-lg-3 col-form-label"></label>
                 <div class="col-sm-6">
-                    <input type=text" class="form-control custom-input-width" placeholder="Address">
-                </div>
-            </div>
-
-            <div class="form-group row" style="padding-top: 15px;">
-                <label class="col-lg-3 col-form-label"></label>
-                <div class="col-sm-6">
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" name="message" placeholder="Message"
+                        rows="3">
                 </textarea>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary"
-                style="margin-top: 15px; margin-left:600px; width:150px;">Apply</button>
+            <button type="submit" class="btn btn-primary" style="margin-top: 15px; margin-left:600px; width:150px;"
+                name="apply">Apply</button>
+
     </div>
     </form>
 
