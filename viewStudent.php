@@ -54,6 +54,7 @@ $result = mysqli_query($data,$sql);
                         <th scope="col">Name</th>
                         <th scope="col">Email</th>
                         <th scope="col">Phone</th>
+                        <th scope="col">Edit</th>
                         <th scope="col">Delete</th>
 
                     </tr>
@@ -69,6 +70,8 @@ $result = mysqli_query($data,$sql);
                         </th>
                         <td><?php echo "{$info['email']}"?></td>
                         <td><?php echo "{$info['phone']}"?></td>
+                        <td><?php echo "<a class='btn btn-success' href='editStudent.php?student_id={$info['id']}'>Edit</a>"?>
+                        </td>
                         <td><?php echo "<a class='btn btn-danger' href='deleteStudent.php?student_id={$info['id']}' 
                         onClick=\" javascript:return confirm('Are you sure to delete that student ?');\">Delete</a>"?>
                         </td>
